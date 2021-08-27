@@ -32,8 +32,8 @@ export async function aplicaEfeitoImagem(
       break
   }
 
-  const url = `/output/${efeito}-${file.name}`
-  response.write('./public' + url)
+  const url = `./public/output/${efeito}-${file.name}`
+  response.write(url)
 
   return url
 }
